@@ -28,24 +28,29 @@ dotnet run --project HotelFinder.API
 📁 Project Structure
 HotelFinder.API/
 │
+
 ├── Controllers/
 │   └── HotelsController.cs
 │
+
 ├── Business/
 │   ├── Abstract/
 │   │   └── IHotelService.cs
 │   └── Concrete/
 │       └── HotelManager.cs
 │
+
 ├── DataAccess/
 │   ├── Abstract/
 │   │   └── IHotelRepository.cs
 │   └── Concrete/
 │       └── HotelRepository.cs
 │
+
 ├── Entities/
 │   └── Hotel.cs
 │
+
 ├── appsettings.json
 ├── Program.cs
 └── HotelDbContext.cs
