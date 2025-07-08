@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace HotelFinder.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class HotelsController : ControllerBase
     {
         private IHotelService _hotelService;
@@ -24,7 +24,7 @@ namespace HotelFinder.API.Controllers
             return _hotelService.GetAllHotels();
         }
 
-        [HttpGet]
+        [HttpGet("{id}")]
         public Hotel Get(int id)
         {
             return _hotelService.GetHotelById(id);
