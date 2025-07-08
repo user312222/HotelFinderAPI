@@ -5,7 +5,7 @@ namespace HotelFinder.API
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers(); // örnek
+            services.AddControllers();
 
         }
 
