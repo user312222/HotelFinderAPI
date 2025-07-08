@@ -8,7 +8,7 @@ namespace HotelFinder.DataAccess
         override protected void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Server=W;Database=HotelDb;Integrated Security=True;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer("Server=ServerName;Database=HotelDb;Integrated Security=True;TrustServerCertificate=True;");
 
         }
 
